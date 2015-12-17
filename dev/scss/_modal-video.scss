@@ -1,0 +1,39 @@
+/* MODAL! */
+.close-video
+{
+  position: fixed;
+  z-index: 9999;
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  transition: all .3s ease;
+  display: none;
+  font-size: 30px;
+  &:hover
+  {
+    color: $darkGrey;
+
+    background-color: white;
+  //  background-color: darken($darkGrey,10%);
+  }
+}
+.modal-iframe
+{
+  left: 0;
+  right: 0;
+  top: 4%;
+  margin: 0 auto;
+  z-index: 9998;
+  position: fixed;
+  width: 94%;
+  height: 600px;
+}
+.overlay
+{
+  display: none;
+  z-index: 9998;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.9)
+}

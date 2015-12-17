@@ -1,0 +1,97 @@
+body
+{
+  color: $darkGrey;
+  font-family: Arial,serf;
+}
+body
+{
+  margin:0px;
+}
+.video-container
+{
+  position: relative;
+}
+.logo-light,.logo-dark
+{
+  z-index: 9998;
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 200px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-light
+{
+  background-image: url("../images/otb-logo-white.svg");
+}
+.logo-dark
+{
+  background-image: url("../images/otb-logo-black.svg");
+}
+@media(min-width: 1px) and (max-width: $mobile-large-break)
+{
+  .logo-light,.logo-dark
+  {
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: 50px;
+  }
+}
+
+
+
+
+.header-container
+{
+  color: white;
+  position: absolute;
+  top:0;
+  z-index: 999;
+  width: 100%;
+}
+
+/* KAN TAS BORT VID SENARE TILLFÄLLE */
+.content
+{
+  margin-top: -4px;
+  background-color: $darkGrey;
+  //height: 600px;
+  width: 100%;
+}
+.section-header
+{
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 auto;
+  color: white;
+}
+.circle-container
+{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+.circle
+{
+  color: $darkGrey;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  @extend .flex-center;
+  > div
+  {
+
+  }
+}
+@media(min-width: 1px) and (max-width: $mobile-large-break)
+{
+  .circle
+  {
+    width: 130px;
+    height: 130px;
+  }
+}
